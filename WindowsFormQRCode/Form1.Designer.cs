@@ -34,6 +34,8 @@ namespace WindowsFormQRCode
             this.txtQRCode = new System.Windows.Forms.TextBox();
             this.btnGerarQRCode = new System.Windows.Forms.Button();
             this.btnLimparQRCode = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.btnSalvarImagemQRCode = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picQRCode)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,11 +88,22 @@ namespace WindowsFormQRCode
             this.btnLimparQRCode.UseVisualStyleBackColor = true;
             this.btnLimparQRCode.Click += new System.EventHandler(this.btnLimparQRCode_Click);
             // 
+            // btnSalvarImagemQRCode
+            // 
+            this.btnSalvarImagemQRCode.Location = new System.Drawing.Point(524, 290);
+            this.btnSalvarImagemQRCode.Name = "btnSalvarImagemQRCode";
+            this.btnSalvarImagemQRCode.Size = new System.Drawing.Size(98, 23);
+            this.btnSalvarImagemQRCode.TabIndex = 4;
+            this.btnSalvarImagemQRCode.Text = "Salvar imagem";
+            this.btnSalvarImagemQRCode.UseVisualStyleBackColor = true;
+            this.btnSalvarImagemQRCode.Click += new System.EventHandler(this.btnSalvarImagemQRCode_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(659, 450);
+            this.Controls.Add(this.btnSalvarImagemQRCode);
             this.Controls.Add(this.btnLimparQRCode);
             this.Controls.Add(this.btnGerarQRCode);
             this.Controls.Add(this.txtQRCode);
@@ -111,6 +124,8 @@ namespace WindowsFormQRCode
         private System.Windows.Forms.TextBox txtQRCode;
         private System.Windows.Forms.Button btnGerarQRCode;
         private System.Windows.Forms.Button btnLimparQRCode;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button btnSalvarImagemQRCode;
     }
 }
 

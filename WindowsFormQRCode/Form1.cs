@@ -36,5 +36,16 @@ namespace WindowsFormQRCode
             txtQRCode.Clear();
             picQRCode.Image = null;
         }
+
+        private void btnSalvarImagemQRCode_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = @"PNG|*.png" })
+            {
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    picQRCode.Image.Save(saveFileDialog.FileName);
+                }
+            }
+        }
     }
 }
