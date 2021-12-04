@@ -31,6 +31,7 @@ namespace WindowsFormQRCode
             Limpar();
         }
 
+        //Método para limpar TextBox e PictureBox
         private void Limpar()
         {
             txtQRCode.Clear();
@@ -38,6 +39,12 @@ namespace WindowsFormQRCode
         }
 
         private void btnSalvarImagemQRCode_Click(object sender, EventArgs e)
+        {
+            SalvarImagem();
+        }
+
+        //método para salvar imagem QRCode gerada
+        private void SalvarImagem()
         {
             using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = @"PNG|*.png" })
             {
